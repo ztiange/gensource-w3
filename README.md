@@ -61,3 +61,5 @@ streamlit run src/app.py
 ```bash
 pytest
 ```
+
+streamlit部署：https://gensource-w3-m3cbcr2k2dydzlaivh4o5u.streamlit.app/
