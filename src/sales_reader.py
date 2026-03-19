@@ -4,7 +4,7 @@ from typing import Tuple
 
 def read_sales_data(file_path: str) -> Tuple[pd.DataFrame, pd.DataFrame]:
     df = pd.read_excel(file_path)
-    required_columns = ['Product', 'Quantity', 'Price']
+    required_columns = ['Date', 'Product', 'Quantity', 'Price']
     missing_columns = [col for col in required_columns if col not in df.columns]
     if missing_columns:
         raise ValueError(f"Missing required columns: {missing_columns}")

@@ -7,7 +7,7 @@ def test_read_sales_data_with_valid_file():
     valid_data, removed_data = read_sales_data('data/sales_january.xlsx')
     assert isinstance(valid_data, pd.DataFrame)
     assert isinstance(removed_data, pd.DataFrame)
-    assert list(valid_data.columns) == ['Product', 'Quantity', 'Price']
+    assert list(valid_data.columns) == ['Date', 'Product', 'Quantity', 'Price']
     assert len(valid_data) > 0
 
 
